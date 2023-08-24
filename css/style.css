@@ -160,7 +160,7 @@ h1 {
      background-image:  linear-gradient(  /* Le agregamos una opacidad a la imagen y la incorporamos con la url */
         rgba(0, 0, 0, 0.7),
         rgba(0, 0, 0, 0.7)), 
-        url(multimedia/image/servicios/i1.jpg);
+        url(/multimedia/image/servicios/i1.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -223,7 +223,7 @@ h1 {
 }
 
 .general-2 {
-    background-image: url(multimedia/image/servicios/i2.jpg);
+    background-image: url(/multimedia/image/servicios/i2.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -232,7 +232,7 @@ h1 {
 }
 
 .general-3 {
-    background-image: url(multimedia/image/servicios/i3.jpg);
+    background-image: url(/multimedia/image/servicios/i3.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
