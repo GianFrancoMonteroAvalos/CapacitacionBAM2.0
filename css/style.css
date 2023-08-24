@@ -1,0 +1,287 @@
+/* Selector */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style:none;
+}
+
+
+/* Damos un ancho al scrollbar */
+
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+/* Estilo del thumb del scrollbar */
+
+::-webkit-scrollbar-thumb {
+    background-color: #F4B52B; 
+    border-radius: 5px; 
+}
+
+/* Estilo del thumb del scrollbar al pasar el mouse sobre él */
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #7e5d2e; 
+}
+
+body {
+    background: #000; 
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Righteous', cursive;
+    font-family: 'Sree Krushnadevaraya', serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Estilo a botones */
+
+.btn-1 {
+    display:inline-block;
+    padding: 11px 35px;
+    background-color: #F4B52B;
+    color: black;
+    text-transform: uppercase;
+
+}
+
+.btn-1:hover {
+    background-color: #7e5d2e;
+}
+
+.btn-2 {
+    display:inline-block;
+    padding: 11px 8px;
+    border-radius: 50%;
+    background-color: #F4B52B;
+    color: black;
+    text-transform: uppercase;
+    position: fixed;
+    bottom: 20px; /* Distancia desde abajo */
+    right: 20px; /* Distancia desde la derecha */
+    z-index: 999; /* Asegura que el botón esté por encima de otros elementos */
+}
+
+.btn-2:hover {
+    background-color: #7e5d2e;
+}
+
+
+
+/* Navbar */
+
+nav {
+    background-color: rgba(0, 0, 0, 1); 
+    padding: 10px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+}
+
+/* Fijamos características en la lista desordenada */
+
+ul {
+    
+     list-style: none; /* le sacamos el subrayado */
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    margin: 0 15px;
+    font-size: large;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out; /* agregamos una transicion para que tenga un pequeño delay al clickearlo */
+}
+
+/* Cuando posiciono el mouse en los enlaces del navbar se colorea */
+
+a:hover {
+    color: #F4B52B;
+    
+}
+
+.logo-link {
+    margin-left: 20px; /* Espacio entre el borde izquierdo y el logo */
+    text-decoration: none;
+}
+
+
+/* Entrada */
+
+div {
+    position: relative;
+}
+
+/* Modifico los estilos del video del index para que cubra toda la pantalla */
+
+video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+h1 {
+    margin-top: 50px;
+    margin-bottom: 71px;
+    background: #000;
+    font-size: 123px;
+    text-align: center;
+    font-weight: 400px;
+    mix-blend-mode: multiply; /* oscurecemos el contenido del elemento */
+    z-index: 3;
+    position: relative;
+}
+
+/* Servicios */
+
+.services{
+     background-image:  linear-gradient(  /* Le agregamos una opacidad a la imagen y la incorporamos con la url */
+        rgba(0, 0, 0, 0.7),
+        rgba(0, 0, 0, 0.7)), 
+        url(/multimedia/image/servicios/i1.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed; /* establecemos que la imagen de fondo permanecerá fija en su posición */
+    padding: 100px 0;
+    
+}
+
+.services-content {
+    text-align: center;
+}
+
+.services-content h2 {
+    font-size: 55px;
+    line-height: 70px;
+    color: #f9fafc;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+
+.services-content p{
+    font-size: 16px;
+    color:#F4B52B;
+    margin-bottom: 50px;
+    padding: 0 100px;
+}
+
+.services-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+
+}
+
+.services-1 {
+    padding: 0 100px;
+}
+
+.services-1 img{
+    width: 25px;
+    margin-bottom: 15px;
+}
+
+.services-1 h3{
+    color: #f2c562;
+    font-size: 18px;
+}
+
+/* Descripcion más imagen */
+
+.general {
+    display: flex;
+
+}
+
+.general-1 {
+    width: 50%;
+    padding: 100px 250px 100px 100px;
+    background-color: #e1e2e6;
+}
+
+.general-2 {
+    background-image: url(/multimedia/image/servicios/i2.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+    
+}
+
+.general-3 {
+    background-image: url(/multimedia/image/servicios/i3.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+}
+
+h2 {
+    font-size: 55px;
+    line-height: 70px;
+    color: #323337;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 16px;
+    color: #414247;
+    margin: 25px 0 45px 0;
+}
+
+/* Contacto e inicia el footer*/
+
+.footer {
+    padding: 100px 0;
+    text-align: center;
+    display: flex; 
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer h2 {
+    color: #FEFBF8;
+}
+
+.form-group { 
+    display: flex;
+}
+
+.campo {
+    padding: 13px 10px;
+    background-color:#B1AFB0;
+    color: #FEFBF8;
+    outline: none;
+    font-size: 16px;
+    margin:0 5px 5px 0;
+    border: 0;
+}
+
+.campo::placeholder{
+    color: #FEFBF8;
+    text-transform: capitalize;
+}
