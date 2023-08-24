@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Links -->
+    <!-- Fonts (Fuente de letra) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,700;1,300;1,400&family=Righteous&family=Sree+Krushnadevaraya&display=swap" rel="stylesheet">
+    <!-- Estilos -->
+    <link rel="stylesheet" href="/css/style.css">
+    <!-- Favicon -->
+    <link rel="icon" type="#" href="img/icons/1-logo-color.png">
+    <!-- Script -->
+    <!-- Javascript -->
+    <script src="js/script.js"></script>
+    <script src="validar.js"></script>
+    <!-- Esta línea crea una nueva instancia de la biblioteca Typed.js  -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <!-- Titulo -->
+    <title>Beauty MakeUp</title>
+
+</head>
+<body>
+
+    <!-- Navbar -->
+    
+    <nav>
+
+         <!-- Lista desordenada para agregar las secciones-->
+
+        <ul>
+            
+            <!-- le agregamos un loco al navbar -->
+
+            <a href="#" class="logo-link">
+                <img class="logo" src="multimedia/image/icons/1-logo-color.png" height="35" >
+            </a>
+            <li><a href="index.html">Inicio</a></li>
+
+             <!-- El siguiente enlace te llevará a la página de servicios -->
+
+            <li><a href="servicios.html">Servicios</a></li>
+
+             <!-- El siguiente enlace te arrastrara hasta el footer -->
+
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+
+<!-- Inicia el main (Contenido mas revelante) -->
+
+<main class="services"> 
+
+
+    <!-- Anidamos secciones con div, para separar contenido -->
+
+    <div class="services-content container">
+        
+        <h2>Beauty MakeUp <span class="multitext">Servicios</span></h2>
+
+        <div class="services-group">
+
+            <div class="services-1">
+                <img src="multimedia/image/icons/icon-services.png" alt="">
+                <h3>Diseño Exclusivo</h3>
+            </div>
+
+            <div class="services-1">
+                <img src="multimedia/image/icons/icon-makeup.png" alt="">
+                <h3>Productos Premium</h3>
+            </div>
+
+            <div class="services-1">
+                <img src="multimedia/image/icons/icon-team.png" alt="">
+                <h3>Experiencia de Equipo</h3>
+            </div>
+
+        </div>
+
+        <!-- Agregamos un parrafo para sumar contenido -->
+
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati voluptates fugiat, amet ex quo similique doloribus dignissimos illum dolorum, nisi tempora magnam quas at esse dolores non laborum? Nulla, aliquam!</p>
+
+        <!-- Generamos un boton a partir de css -->
+
+        <a href="#" class="btn-1">Información</a>
+
+</div>
+
+</main>
+
+    <!-- Finaliza el main! -->
+
+<!-- Descripcion se separan en secciones -->
+
+    <section class="general">
+        <div class="general-1">
+                <h2>maquillajes de diseño y elegancia</h2>
+
+                <!-- Esto es un parrafo! -->
+
+                <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Et at repudiandae iste quod autem laudantium, saepe temporibus nobis quisquam unde, ex magnam provident laborum totam repellat eaque assumenda illo adipisci. 
+                </p>
+
+                <!-- Generamos un boton a partir de css -->
+
+                <a href="#" class="btn-1">Información</a>
+            </div>
+        <div class="general-2"></div>
+    </section>
+
+<!-- Cerramos seccion e iniciamos otra seccion -->
+
+    <section class="general">
+        <div class="general-3"></div>
+        <div class="general-1">
+                <h2>Productos de excelencia</h2>
+
+                <!-- Esto es un parrafo! -->
+
+                <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Et at repudiandae iste quod autem laudantium, saepe temporibus nobis quisquam unde, ex magnam provident laborum totam repellat eaque assumenda illo adipisci.
+                </p>
+
+            <!-- Generamos un boton a partir de css -->
+            <a href="#" class="btn-1">Información</a>
+        </div>
+</section>
+
+<footer class="footer container" id="contacto">
+        <h2>Contactanos</h2>
+
+        <!-- agregamos br para hacer un espacio de linea -->
+
+        <br>
+        
+        <img class="logo" src="multimedia/image/icons/1-logo-color.png" height="125" >
+
+        <br>
+
+    <!-- Agregamos un formulario con metodo "post" que hace que envia los datos al cuerpo del HTTP y no en la url-->
+
+    <form method="post" id="myForm">
+
+        <div class="form-group">
+
+            <div>
+                <input type="text" placeholder="Nombre" name="name" class="campo" >
+
+                <br>
+
+                <input type="text" placeholder="Email" name="email" class="campo" >
+            </div>
+            <textarea name="message" cols="30" rows="2" placeholder="..." class="campo"></textarea>
+        </div>
+        <input type="submit" name="Enviar" class="btn-1">
+    </form>
+
+    <!-- creamos un div para que deje un mensaje cuando se activa el Javascript del form -->
+    <div id="error-message"></div>
+
+    <!-- creamos un boton para hacer el SwipeUp -->
+    <button id="scrollTopBtn" class="btn-2" title="Volver Arriba">SwipeUp</button>
+
+
+<script>
+
+
+    // creamos una variable con el selector .multitext donde se aplicara la animación
+    var typyngEffect = new Typed(".multitext", {
+    strings : ["Servicios", "Diseños", "TeamWork"],
+    // establecemos un bucle infinito con las cadenas de texto y volvera a repetirse 
+    loop : true,
+    // definimos la velocidad que se escriben las letras, se escribira un caracter cada 100 milisegundos
+    typeSpeed : 100,
+    // Establecemos la velocidad a la que se borrarán las letras
+    backSpeed : 80,
+    // Indica un retraso en milisegundos después de que se complete la escritura
+    backDelay : 1500
+})
+
+
+</script>
+
+
+</footer>
+</body>
+</html>
